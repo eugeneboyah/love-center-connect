@@ -17,6 +17,12 @@ app.get('/', (req, res) => {
   res.render('index'); // This will render views/index.ejs
 });
 
+
+app.get('/password', (req, res) => {
+  res.render('Password'); // This will render views/index.ejs
+});
+
+
 // Start server
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
